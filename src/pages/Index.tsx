@@ -1,14 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
-const Index = () => {
+export default function Index() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="min-h-screen bg-black flex items-center justify-center overflow-hidden relative">
+      <div 
+        className="absolute left-0 top-1/2 -translate-y-1/2 w-1/4 h-[60vh] bg-contain bg-no-repeat bg-center opacity-70"
+        style={{ 
+          backgroundImage: `url('https://cdn.poehali.dev/projects/f2f243f8-5ed9-4b9f-af1e-6bade75886ff/files/a322b166-7858-4428-aea1-b39fa999a93f.jpg')`,
+          filter: 'drop-shadow(0 0 30px rgba(234, 56, 76, 0.3))'
+        }}
+      />
+
+      <div 
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-1/4 h-[60vh] bg-contain bg-no-repeat bg-center opacity-70"
+        style={{ 
+          backgroundImage: `url('https://cdn.poehali.dev/projects/f2f243f8-5ed9-4b9f-af1e-6bade75886ff/files/a322b166-7858-4428-aea1-b39fa999a93f.jpg')`,
+          filter: 'drop-shadow(0 0 30px rgba(234, 56, 76, 0.3))'
+        }}
+      />
+
+      <div className="relative z-10 text-center px-8 max-w-5xl">
+        <h1 
+          className="text-white font-bold leading-tight tracking-tight"
+          style={{ 
+            fontFamily: "'Oswald', sans-serif",
+            fontSize: 'clamp(3rem, 12vw, 8rem)',
+            textShadow: '0 0 40px rgba(234, 56, 76, 0.5), 0 0 80px rgba(234, 56, 76, 0.3)',
+            letterSpacing: '0.05em'
+          }}
+        >
+          ПОД ЗАЩИТОЙ<br />ДОНБАССА
+        </h1>
       </div>
+
+      <link 
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" 
+        rel="stylesheet" 
+      />
     </div>
   );
-};
-
-export default Index;
+}
