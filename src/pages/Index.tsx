@@ -3,7 +3,7 @@ export default function Index() {
     <div className="min-h-screen bg-black flex items-center justify-center overflow-hidden relative">
       <div className="relative z-10 text-center px-8 w-full">
         <h1 
-          className="text-white font-bold leading-tight tracking-tight"
+          className="text-white font-bold leading-tight tracking-tight animate-text-appear"
           style={{ 
             fontFamily: "'Oswald', sans-serif",
             fontSize: 'clamp(4rem, 16vw, 12rem)',
